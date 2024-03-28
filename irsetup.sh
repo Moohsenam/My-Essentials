@@ -11,3 +11,6 @@ nohup ./RTT --iran --lport:8080 --sni:splus.ir --password:123 &
 
 # Command 4
 nohup ./RTT --iran --lport:8081 --sni:splus.ir --password:123 &
+
+
+nohup ./RTT --iran --lport:5053 --sni:splus.ir --password:123 &
