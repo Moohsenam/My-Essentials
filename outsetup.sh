@@ -1,5 +1,7 @@
 #!/bin/bash
 
+wget "https://raw.githubusercontent.com/radkesvat/ReverseTlsTunnel/master/scripts/install.sh" -O install.sh && chmod +x install.sh && bash install.sh
+
 # Function to retrieve IP address of a domain
 get_ip_address() {
     domain="$1"
