@@ -15,16 +15,16 @@ select_script() {
     select script_port in "443" "8080" "8081" "5023" "Quit"; do
         case $script_port in
             "443" )
-                ./RTT --kharej --iran-ip:$ip --iran-port:443 --toip:127.0.0.1 --toport:8487 --password:123 --sni:splus.ir
+                ./RTT --kharej --iran-ip:$ip --iran-port:443 --toip:127.0.0.1 --toport:8487 --password:123 --sni:divar.ir --connection-age:4800
                 ;;
             "8080" )
-                ./RTT --kharej --iran-ip:$ip --iran-port:8080 --toip:127.0.0.1 --toport:8487 --password:123 --sni:splus.ir
+                ./RTT --kharej --iran-ip:$ip --iran-port:8080 --toip:127.0.0.1 --toport:8487 --password:123 --sni:divar.ir --connection-age:4800
                 ;;
             "8081" )
-                ./RTT --kharej --iran-ip:$ip --iran-port:8081 --toip:127.0.0.1 --toport:8487 --password:123 --sni:splus.ir
+                ./RTT --kharej --iran-ip:$ip --iran-port:8081 --toip:127.0.0.1 --toport:8487 --password:123 --sni:divar.ir --connection-age:4800
                 ;;
             "5023" )
-                ./RTT --kharej --iran-ip:$ip --iran-port:5023 --toip:127.0.0.1 --toport:8487 --password:123 --sni:splus.ir
+                ./RTT --kharej --iran-ip:$ip --iran-port:5023 --toip:127.0.0.1 --toport:8487 --password:123 --sni:divar.ir --connection-age:4800
                 ;;
             "Quit" )
                 echo "Exiting script."
